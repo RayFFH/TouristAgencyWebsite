@@ -1,0 +1,29 @@
+/* CarouselCard.css */
+
+.carousel-item {
+    text-align: center; /* Center align the content */
+  }
+  
+  .card-image {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height if necessary */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  .card-text {
+    margin-top: 10px; /* Add margin between image and text */
+    color: #333; /* Set text color */
+    font-size: 16px; /* Set font size */
+  }
+
+  .slick-prev, .slick-next {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #555;
+  }
+  
+  

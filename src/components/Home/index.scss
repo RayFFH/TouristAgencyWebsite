@@ -1,0 +1,233 @@
+.home-page {
+
+    position: relative;
+    overflow: auto;
+
+    .background-container {
+      position: relative;
+      background: url('../../assets/images/background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 40px;
+      //background-position: center;
+      height: 100vh; // Set the height as needed
+
+    .text-zone {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40%;
+      max-height: 90%;
+    }
+    
+  
+    h1 {
+      color: #ffffff;
+      font-size: 56px;
+      line-height: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      
+      @media screen and (max-width: 768px) {
+        font-size: 36px; // Adjust as needed for smaller screens
+      }
+  
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        font-size: 48px; // Adjust as needed for medium-sized screens
+      }
+  
+      @media screen and (min-width: 1201px) {
+        font-size: 56px; // Adjust as needed for larger screens
+      }
+     
+  
+      img {
+        margin-left: 20px;
+        opacity: 0;
+        width: 32px;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+      }
+    }
+
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px; // Adjust as needed for smaller screens
+        }
+    
+        @media screen and (min-width: 769px) and (max-width: 1200px) {
+          font-size: 18px; // Adjust as needed for medium-sized screens
+        }
+    
+        @media screen and (min-width: 1201px) {
+          font-size: 22px; // Adjust as needed for larger screens
+        }
+
+        
+      }
+    
+    .flat-button {
+      color: #000000;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #000000;
+      margin-top: 25px;
+      float: left;
+      animation: fadeInAnimation 1s 1.8s backwards;
+      white-space: nowrap;
+      background: #ffffff;
+  
+      &:hover {
+        background: #ffd700;
+        color: #333;
+      }
+
+
+       @media screen and (max-width: 768px) {
+      font-size: 12px; // Adjust as needed for smaller screens
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+      font-size: 16px; // Adjust as needed for medium-sized screens
+    }
+
+    @media screen and (min-width: 1201px) {
+      font-size: 18px; // Adjust as needed for larger screens
+    }
+    }
+
+    @media screen and (max-width: 768px) {
+      background-size: 100% 500px; // Adjust as needed for smaller screens
+    }
+  
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+      background-size: 100% 400px; // Adjust as needed for medium-sized screens
+    }
+  
+    @media screen and (min-width: 1201px) {
+      background-size: 100% 600px; // Adjust as needed for larger screens
+    }
+  }
+
+
+  .second-background {
+    background: url('../../assets/images/secondBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-position: center;
+    height: 50vh; // Set the height as needed for the second background
+
+    // Additional styles for the second background...
+
+
+    .text-zone {
+      position: absolute;
+      left: 50%; // Center horizontally
+      top: 50%; // Center vertically
+      transform: translate(-50%, -50%); // Center both horizontally and vertically
+      width: 60%; // Adjust as needed
+      max-height: 90%;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 56px;
+      line-height: 53px;
+      margin: 100px;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+    
+    }
+  
+    h2 {
+      color: #ffffff;
+      max-width: 400px;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 100px;
+      font-family: 'Coolvetica';
+      font-weight: 200;
+
+    }
+
+    .flat-button {
+      color: #000000;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #000000;
+      margin-left:100px;
+      float: left;
+      animation: fadeInAnimation 1s 1.8s backwards;
+      white-space: nowrap;
+      background: #ffffff;
+
+      &:hover {
+        background: #ffd700;
+        color: #333;
+      }
+    }
+  }
+
+  .carousel-container {
+    position: absolute;
+    // bottom: 5%; // Adjust as needed
+    margin-top:200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%; // Adjust as needed
+  }
+  .slick-prev, .slick-next {
+    font-size: 0px; /* Adjust font size as needed */
+    color: #000000; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color */
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    line-height: 40px; /* Match height for centering */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .slick-prev::before, .slick-next::before {
+    content: '\2039'; /* Unicode character for left-pointing arrow */
+  }
+  
+  .slick-next::before {
+    content: '\203A'; /* Unicode character for right-pointing arrow */
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Background color on hover */
+  }
+
+  .footer {
+    position: absolute;
+    //bottom: 0;
+    margin-top:600px;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+}
