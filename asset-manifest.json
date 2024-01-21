@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TouristAgencyWebsite/static/css/main.53bfca49.css",
-    "main.js": "/TouristAgencyWebsite/static/js/main.62fa8d46.js",
+    "main.js": "/TouristAgencyWebsite/static/js/main.8304381d.js",
     "static/js/787.4305da09.chunk.js": "/TouristAgencyWebsite/static/js/787.4305da09.chunk.js",
     "static/media/secondBackground.jpg": "/TouristAgencyWebsite/static/media/secondBackground.ef3907301b6adf74b3ef.jpg",
     "static/media/c3.jpg": "/TouristAgencyWebsite/static/media/c3.dc36c10d798705eb9626.jpg",
@@ -20,11 +20,11 @@
     "static/media/slick.woff": "/TouristAgencyWebsite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TouristAgencyWebsite/index.html",
     "main.53bfca49.css.map": "/TouristAgencyWebsite/static/css/main.53bfca49.css.map",
-    "main.62fa8d46.js.map": "/TouristAgencyWebsite/static/js/main.62fa8d46.js.map",
+    "main.8304381d.js.map": "/TouristAgencyWebsite/static/js/main.8304381d.js.map",
     "787.4305da09.chunk.js.map": "/TouristAgencyWebsite/static/js/787.4305da09.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.53bfca49.css",
-    "static/js/main.62fa8d46.js"
+    "static/js/main.8304381d.js"
   ]
 }
