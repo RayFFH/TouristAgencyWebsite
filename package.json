@@ -1,7 +1,7 @@
 {
   "name": "touristwebsite",
   "version": "0.1.0",
-  "homepage": "https://RayFFH.github.io/TourismAgencyWebsite",
+  "homepage": "https://RayFFH.github.io/TouristAgencyWebsite",
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
