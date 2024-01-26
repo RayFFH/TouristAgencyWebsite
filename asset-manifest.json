@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TouristAgencyWebsite/static/css/main.2c858ce4.css",
-    "main.js": "/TouristAgencyWebsite/static/js/main.9f8e9072.js",
+    "main.css": "/TouristAgencyWebsite/static/css/main.05d20d86.css",
+    "main.js": "/TouristAgencyWebsite/static/js/main.fa58af01.js",
     "static/js/787.4305da09.chunk.js": "/TouristAgencyWebsite/static/js/787.4305da09.chunk.js",
     "static/media/secondBackground.jpg": "/TouristAgencyWebsite/static/media/secondBackground.ef3907301b6adf74b3ef.jpg",
     "static/media/background10.png": "/TouristAgencyWebsite/static/media/background10.f3419f7135b3c92eaed2.png",
@@ -17,8 +17,10 @@
     "static/media/shinjyuku.jpg": "/TouristAgencyWebsite/static/media/shinjyuku.4606f7eb4751f84ca64f.jpg",
     "static/media/odaiba.jpg": "/TouristAgencyWebsite/static/media/odaiba.6864a8521d95adc6a280.jpg",
     "static/media/logo-s.png": "/TouristAgencyWebsite/static/media/logo-s.ccf4a73acc8588e2aeb4.png",
+    "static/media/social.png": "/TouristAgencyWebsite/static/media/social.6af93afdb4a02020ce19.png",
     "static/media/helvetica-neu.ttf": "/TouristAgencyWebsite/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff": "/TouristAgencyWebsite/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/google-play.png": "/TouristAgencyWebsite/static/media/google-play.84fe6e0e6d93f207b2e8.png",
     "static/media/bed.png": "/TouristAgencyWebsite/static/media/bed.258b05d625b4cb868c7a.png",
     "static/media/LaBelleAurore.woff2": "/TouristAgencyWebsite/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/harajyuku.jpeg": "/TouristAgencyWebsite/static/media/harajyuku.2ca3de76da9f41f55874.jpeg",
@@ -35,12 +37,12 @@
     "static/media/slick.ttf": "/TouristAgencyWebsite/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/TouristAgencyWebsite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TouristAgencyWebsite/index.html",
-    "main.2c858ce4.css.map": "/TouristAgencyWebsite/static/css/main.2c858ce4.css.map",
-    "main.9f8e9072.js.map": "/TouristAgencyWebsite/static/js/main.9f8e9072.js.map",
+    "main.05d20d86.css.map": "/TouristAgencyWebsite/static/css/main.05d20d86.css.map",
+    "main.fa58af01.js.map": "/TouristAgencyWebsite/static/js/main.fa58af01.js.map",
     "787.4305da09.chunk.js.map": "/TouristAgencyWebsite/static/js/787.4305da09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c858ce4.css",
-    "static/js/main.9f8e9072.js"
+    "static/css/main.05d20d86.css",
+    "static/js/main.fa58af01.js"
   ]
 }
