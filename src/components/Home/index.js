@@ -31,6 +31,24 @@ import ueno from '../../assets/images/ueno.jpg';
 import shinjyuku from '../../assets/images/shinjyuku.jpg';
 import la from '../../assets/images/left-arrow.png';
 import ra from '../../assets/images/right-arrow.png';
+import stamp from '../../assets/images/stamp.png';
+import google from '../../assets/images/google-play.png';
+import apple from '../../assets/images/social.png';
+
+import paypal from '../../assets/images/paypal.png';
+import gpay from '../../assets/images/gpay.png';
+import dinercard from '../../assets/images/dinercard.png';
+import visa from '../../assets/images/visa.png';
+import applepay from '../../assets/images/applepay.png';
+import mastercard from '../../assets/images/mastercard.png';
+
+import facebook from '../../assets/images/facebook.png';
+import twitter from '../../assets/images/twitter.png';
+import linkedin from '../../assets/images/linkedin.png';
+import instagram from '../../assets/images/instagram.png';
+
+
+
 
 
 const Home = () => {
@@ -44,6 +62,8 @@ const Home = () => {
     { icon: bed, alt: 'Icon 2', text: 'Great hotels near you' },
     { icon: heart2, alt: 'Icon 1', text: 'Our Tokyo Favourites' },
 ];
+
+
 
 
     return (
@@ -61,18 +81,24 @@ const Home = () => {
 
           </div>
           <div>
-          <a
-              href="#"
-              onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}
+            <a
+              href="#about" // Replace "aboutus" with the actual id of your aboutus section
+              onClick={(e) => {
+                e.preventDefault();
+                const aboutusSection = document.getElementById("about"); // Replace "aboutus" with the actual id of your aboutus section
+                if (aboutusSection) {
+                  aboutusSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
               className="learn-more-link" // Add a class for styling
             >
               <img
-                src= {arrow} // Replace with the actual path to your image
+                src={arrow} // Replace with the actual path to your image
                 alt="Learn more"
                 className="learn-more-image" // Add a class for styling
               />
-           </a>
-          </div>
+            </a>
+        </div>
         </div>
         </section>
         <section id="about" className="aboutus">
@@ -82,8 +108,8 @@ const Home = () => {
               <p>Our team specializes in a multitude of languages and we're constantly updating our proprietary software to learn more - all the better to serve your needs.</p>
           </div>
         </section>
-        <section classname="iconcards">
-        <div className="cards-container">
+        <section className="iconcards">
+          <div className="cards-container">
             {cardsData.map((card, index) => (
               <Card key={index} {...card} />
             ))}
@@ -137,44 +163,44 @@ const Home = () => {
         <div className="image-grid">
         <div className="image-container">
       <img src={meguro} alt="Tokyo Image 1" />
-      <div className="image-text">Caption for Image 1</div>
+      <div className="image-text">Meguro</div>
     </div>
     <div className="image-container">
       <img src={roppongi} alt="Tokyo Image 2" />
-      <div className="image-text">Caption for Image 2</div>
+      <div className="image-text">Roppongi</div>
     </div>
     <div className="image-container">
       <img src={harajyuku} alt= "Tokyo Image 3" />
-      <div className="image-text">Caption for Image 3</div>
+      <div className="image-text">Harajyuku</div>
     </div>
     <div className="image-container">
       <img src={shibuya} alt="Tokyo Image 4" />
-      <div className="image-text">Caption for Image 4</div>
+      <div className="image-text">Shibuya</div>
     </div>
     <div className="image-container">
       <img src={shinjyuku} alt="Tokyo Image 1" />
-      <div className="image-text">Caption for Image 1</div>
+      <div className="image-text">Shinjyuku</div>
     </div>
     <div className="image-container">
       <img src={koenji} alt="Tokyo Image 2" />
-      <div className="image-text">Caption for Image 2</div>
+      <div className="image-text">Koenji</div>
     </div>
     <div className="image-container">
       <img src={kichijyouji} alt="Tokyo Image 3" />
-      <div className="image-text">Caption for Image 3</div>
+      <div className="image-text">Kichijyouji</div>
     </div>
     <div className="image-container">
       <img src={ginza} alt="Tokyo Image 4" />
-      <div className="image-text">Caption for Image 4</div>
+      <div className="image-text">Ginza</div>
     </div>
     <div className="image-container">
       <img src={odaiba} alt="Tokyo Image 4" />
-      <div className="image-text">Caption for Image 4</div>
+      <div className="image-text">Odaiba</div>
     </div>
         </div>
         </div>
       </section>
-        <section id="Thingstodo" style={{ height: '800px', margin: '20px', background: '#333333' }}>
+        <section id="Thingstodo" className="Thingstodo">
           <h1>Top Activities</h1>
           <div className="carousel-container">
             <CarouselCard />
@@ -185,6 +211,10 @@ const Home = () => {
     <div className="footer-column">
       <h3>About Us</h3>
       <p>Welcome to our tourism website. Learn more about our mission and values.</p>
+    </div>
+    <div className="footer-column">
+      <h3>Popular Destinations</h3>
+      <p>Explore our most sought-after travel destinations and plan your next adventure.</p>
     </div>
     
   </div>
@@ -212,20 +242,12 @@ const Home = () => {
   </div>
 
   <div className="o-footer-3">
-  <div className="m-footer-block m-footer-block-1-small m-footer-block--small--centered m-footer-ekomi">
+  <div className="m-footer-block m-footer-block-1-small m-footer-block--small--centered m-footer-ekomi m-footer-app">
     <div className="a-title-footer--big u-nomargin--b">Customer reviews</div>
     <div className="m-footer-block__list">
       {/* ekomi */}
       <div className="m-ekomi --bigger-small">
         <div className="m-ekomi-l">
-          <a href="https://www.ekomi.es/testimonios-civitatiscom.html" title="">
-            <img
-              className="b-lazy b-loaded bloaded"
-              border="0"
-              alt="MyApp.com"
-              src="/f/images/ekomi-190x190.png"
-            />
-          </a>
         </div>
         <div className="m-ekomi-r">
           <div className="m-ekomi-rating-wrapper">
@@ -241,7 +263,7 @@ const Home = () => {
           </div>
           <div className="m-ekomi-text">
             +<span>2,500,000</span>{' '}
-            <a href="" title=" reviews">
+            <a href={stamp} style={{ width: '20px', height: '20px' }} title=" reviews">
               <strong>reviews</strong>
             </a>
           </div>
@@ -259,20 +281,50 @@ const Home = () => {
           target="_blank"
           title="Download the Tokyo app from the App Store"
         >
-          <img src="/f/images/app-store-2_en.png" alt="Download the app from the App Store" />
+          <img src={google} alt="Download the app from the App Store" style={{ width: '20px', height: '20px' }}/>
         </a>
         <a
           href=""
           target="_blank"
           title="Download the Tokyo app from Google Play"
         >
-          <img src="/f/images/google-play-2_en.png" alt="Download the app from Google Play" />
+          <img src={apple} alt="Download the app from Google Play" style={{ width: '20px', height: '20px' }} />
         </a>
       </div>
     </div>
   </div>
   <div className="m-footer-block u-hide--small m-footer-email__container"></div>
-</div>;
+</div>
+
+<div className="custom-footer">
+    <div className="footer-inner">
+        <div className="secure-pay">
+        <h2>Payment methods</h2>
+                <ul>
+      
+                    <li><img  alt="visa" src={visa} style={{ width: '40px', height: '40px' }} /></li>
+                    <li><img  alt="master card" src={mastercard}  style={{ width: '40px', height: '40px' }}/></li>
+                    <li><img  alt="paypal" src={applepay} style={{ width: '40px', height: '40px' }} /></li>
+                    <li><img  alt="diner club" src={gpay} style={{ width: '40px', height: '40px' }} /></li>
+                    <li><img  alt="discover" src={dinercard} style={{ width: '40px', height: '40px' }}/></li>
+                    <li><img  alt="apple pay" src={gpay}  style={{ width: '40px', height: '40px' }}/></li>
+                    <li><img  alt="Gpay" src={paypal}  style={{ width: '40px', height: '40px' }}/></li>
+                </ul>
+
+        </div>
+        <div className="footer-block footer-social-container">
+            <div className="footer-social">
+                <ul>
+                    <li><a className="link" title="Tokyo to go on Facebook" href=""><img src={facebook} style={{ width: '40px', height: '40px' }} /></a></li>
+                    <li><a className="link" title="Tokyo to go on Instagram" href=""><img src={instagram} style={{ width: '40px', height: '40px' }} /></a></li>
+                    <li><a className="link" title="Tokyo to go on Linkedin" href=""><img src={linkedin} style={{ width: '40px', height: '40px' }} /></a></li>
+                    <li><a className="link" title="Tokyo to go on Twitter" href=""><img src={twitter} style={{ width: '40px', height: '40px' }} /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </section>
 

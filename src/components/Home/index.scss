@@ -2,7 +2,7 @@
 
   .aboutus{
 
-    height: 500px;
+    height: 550px;
     margin: 20px;
   @media screen and (max-width: 800px) {
     //font-size: 14px; // Adjust as needed for smaller screens
@@ -15,11 +15,11 @@
     
   }
   .iconcards{
-    height: 200px;
+    height: 300px;
     margin: 20px;
     @media screen and (max-width: 800px) {
       //font-size: 14px; // Adjust as needed for smaller screens
-      height:600px
+      height:800px
       
       
     }
@@ -31,7 +31,7 @@
     background: #f70759;
     @media screen and (max-width: 800px) {
       //font-size: 14px; // Adjust as needed for smaller screens
-      height:1000px;
+      height:1200px;
       //margin:200px;
       .main-text{
         margin-top: 10px;
@@ -62,11 +62,30 @@
   height:1000px;
   @media screen and (max-width: 800px) {
     //font-size: 14px; // Adjust as needed for smaller screens
-    height:600px;
-
+    height:500px;
+    .image-text{
+      font-size:20px;
+    }
   
 }
   
+}
+.Thingstodo{
+  height:800px;
+  margin:20px;
+  background: #333333;
+
+  @media screen and (max-width: 800px) {
+    //font-size: 14px; // Adjust as needed for smaller screens
+    height:400px;
+    .card-text{
+      font-size:10px;
+    }
+    h1{
+      font-size:10px;
+    }
+  
+}
 }
 
 
@@ -156,6 +175,8 @@
 
         @media screen and (max-width: 768px) {
           font-size: 14px; // Adjust as needed for smaller screens
+          text-shadow: none;
+          color: black;
         }
     
         @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -201,6 +222,7 @@
 
     @media screen and (min-width: 769px) and (max-width: 1200px) {
       font-size: 16px; // Adjust as needed for medium-sized screens
+      
     }
 
     @media screen and (min-width: 1201px) {
@@ -210,6 +232,7 @@
 
     @media screen and (max-width: 768px) {
       background-size: 100% 500px; // Adjust as needed for smaller screens
+      top: 0px;
     }
   
     // @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -332,11 +355,12 @@
   .carousel-container {
     position: absolute;
     // bottom: 5%; // Adjust as needed
-    background: white;
+    background-color: #333333;
     //margin-top:100px;
     left: 50%;
     transform: translateX(-50%);
     width: 85%; // Adjust as needed
+    
   }
   .slick-prev, .slick-next {
     font-size: 0px; /* Adjust font size as needed */
@@ -385,26 +409,38 @@
     object-fit: cover; /* Adjust as needed (cover, contain, etc.) */
   }
   
+  // .image-container {
+  //   position: relative;
+  // }
   .image-container {
     position: relative;
+    overflow: hidden; /* Ensure the overflow is hidden for the zoom effect */
+  }
+  
+  .image-container img {
+    transition: transform 0.3s; /* Apply a smooth transition on the transform property */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.2); /* Increase the scale on hover (adjust as needed) */
   }
   
   
   .image-text {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white; /* Adjust text color as needed */
     text-align: center;
     padding: 10px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s;
+    font-size:40px;
   }
   
   .image-container:hover .image-text {
-    opacity: 1;
+    opacity: 0;
   }
 
   .image-grid-section {
@@ -442,6 +478,16 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 10px; /* Adjust as needed for spacing between rows */
+  h3{
+    font-family: 'Coolvetica';
+      font-size: 30px;
+      color:white;
+      font-weight:10;
+
+  }
+  p{
+    color:white;
+  }
 }
 
 .footer-column {
@@ -456,8 +502,8 @@
   justify-content: space-around;
   flex-wrap: wrap; /* Allow items to wrap to the next line */
   margin-top: 5px;
-  font-size:20px;
-  font-weight:400px;
+  font-size: 20px;
+  font-weight: 400;
   font-weight: bold;
 }
 
@@ -466,12 +512,31 @@
   text-align: center;
   margin: 10px; /* Adjust margin as needed */
   background-color: white;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transition effect */
+
+  &:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+
+  img {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    margin-bottom: 10px;
+  }
 }
 
-.card img {
-  width: 80px; /* Adjust as needed */
-  height: 80px; /* Adjust as needed */
-  margin-bottom: 10px;
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex: 0 0 calc(50% - 20px); /* Two cards in each row for smaller screens */
+  }
+
+  .card img {
+    width: 60px; /* Adjust as needed for smaller screens */
+    height: 60px; /* Adjust as needed for smaller screens */
+  }
 }
 
 h1 {
@@ -489,10 +554,11 @@ h1 {
 
 .o-footer-3 {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px; /* Adjust padding as needed */
+  //justify-content: space-around;
+  //align-items: center;
+  padding: 10px; /* Adjust padding as needed */
   background-color: #f70759; /* Set the background color */
+  color:white;
 }
 
 .m-footer-block {
@@ -517,7 +583,7 @@ h1 {
 }
 
 .m-ekomi-rating-wrapper {
-  display: flex;
+  //display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -527,7 +593,7 @@ h1 {
 }
 
 .m-ekomi-rating {
-  display: flex;
+  // /display: flex;
   margin-top: 5px; /* Adjust margin as needed */
 }
 
@@ -537,17 +603,20 @@ h1 {
 }
 
 .m-ekomi-text {
-  margin-top: 10px; /* Adjust margin as needed */
+  //margin-top: 10px; /* Adjust margin as needed */
+  margin-left:40px;
 }
 
 .m-footer-app {
   border-top: 2px solid #ccc; /* Add border between blocks */
+  margin-bottom: 10px;
 }
 
 .m-app-links {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .m-app-links a {
@@ -558,6 +627,94 @@ h1 {
   /* Add styles for email container if needed */
 }
 
+.custom-footer {
+  /* Add your custom styles for the footer container */
+}
 
+.footer-inner {
+  /* Add your custom styles for the inner footer container */
+  display: flex;
+  flex-wrap: wrap;
+  color:white;
+}
 
- 
+.footer-block {
+  /* Add your custom styles for each footer block */
+  flex: 1 1 100%;
+}
+
+.row {
+  /* Add your custom styles for the row container */
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.row li {
+  /* Add your custom styles for each list item */
+  margin-right: 10px; /* Adjust the margin as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.footer-social-container {
+  /* Add your custom styles for the social container */
+  flex: 1 1 100%;
+  background-color: #a90139;
+  text-align: right;
+}
+
+.footer-social {
+  /* Add your custom styles for the social icons container */
+  display: flex;
+  justify-content: flex-start;
+  //align-items: center;
+  //align-items: right;
+  margin-right: 20px;
+}
+
+.footer-social ul {
+  /* Add your custom styles for the social icons list */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  //margin: right;
+  margin-left: auto;
+}
+
+.secure-pay ul {
+  /* Add your custom styles for the social icons list */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: right;
+}
+
+.footer-social li {
+  /* Add your custom styles for each social icon */
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.secure-pay li{
+  margin-right: 10px;
+}
+
+.secure-pay {
+  margin-left: 40px; /* Adjust the margin as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  align-content: center;
+}
+
+.secure-pay h2 {
+  /* Add your custom styles for the payment methods heading */
+  font-size: 20px;
+  color: #ffffff; /* Adjust the color as needed */
+  //margin-top: 10px;
+  margin-right:20px;
+}
+.link{
+  margin-right: 20px;
+  left: 10%;
+  padding:10px;
+}
+
