@@ -1,0 +1,12 @@
+// SearchBar.scss
+
+.search-bar {
+    position: fixed;
+    top: 70px; /* Adjust the top value to position it below the navbar */
+    right: 20px; /* Adjust the right value to move it to the right */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 4; /* Ensure it appears above other elements */
+  }
+  

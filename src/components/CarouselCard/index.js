@@ -1,3 +1,5 @@
+/* CarouselCard.js */
+
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -19,15 +21,15 @@ const CarouselCard = () => {
   const carouselItems = [
     {
       imageSrc: c1,
-      text: 'Card 1 Text',
+      text: 'Ueno Park and Chidorigafuchi are particularly famous for their stunning displays.',
     },
     {
       imageSrc: c2,
-      text: 'Card 2 Text'
+      text: 'Visitors have the opportunity to witness the grandeur of the sumo wrestlers',
     },
     {
       imageSrc: c3,
-      text: 'Card 3 Text'
+      text: 'Halloween celebration at Shibuya Crossing',
     }
   ];
 

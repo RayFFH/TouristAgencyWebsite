@@ -1,7 +1,4 @@
 .nav-bar {
-
-  
-
     background: #ffffff;
     width: 100%;
     height: 60px;
@@ -45,6 +42,7 @@
   
           &:after {
             opacity: 1;
+            transform: scaleX(1);
           }
         }
   
@@ -59,6 +57,11 @@
           text-align: center;
           opacity: 0;
           transition: all 0.3s ease-out;
+          background-color: #ff0000; // Red color for the line
+          height: 2px; // Adjust the height of the line as needed
+          transform-origin: 0 50%;
+          transform: scaleX(0); // Initial state: hidden line
+          transition: transform 0.3s ease-out;
         }
   
         // &:first-child {
@@ -77,16 +80,74 @@
   
       li {
         margin-right: 15px;
-  
+        position: relative;
+      
+        .dropdown-content {
+          display: none; // initially hide the dropdown
+          position: absolute;
+          top: 100%;
+          left: 90%;
+          background-color: #ffffff;
+          border: 1px solid #dddddd;
+          padding: 10px;
+      
+          &:hover {
+            display: block; // show the dropdown on hover
+          }
+        }
+      
         a {
           color: #4d4d4e;
           font-size: 15px;
           line-height: 16px;
           padding: 7px 0;
-  
+          position: relative;
+      
           &:hover {
-            .anchor-icon {
-              color: #ffd700;
+            &:after {
+              opacity: 1;
+              transform: scaleX(1);
+            }
+      
+            + .dropdown-content {
+              display: block; // show the dropdown when the parent li is hovered
+            }
+          }
+      
+          &:after {
+            content: '';
+            background-color: #ff0000;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform-origin: 0 50%;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-out;
+          }
+      
+          .icon {
+            // ... (previous styles)
+      
+            &:after {
+              content: '';
+              background-color: #ff0000;
+              height: 2px;
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              transform-origin: 0 50%;
+              transform: scaleX(0);
+              transition: transform 0.3s ease-out;
+            }
+      
+            &:hover {
+              &:after {
+                opacity: 1;
+                transform: scaleX(1);
+              }
             }
           }
         }

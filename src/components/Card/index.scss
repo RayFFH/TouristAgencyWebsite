@@ -1,0 +1,19 @@
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin-top: 20px;
+  }
+  
+  .card {
+    flex: 0 0 calc(25% - 20px); /* Four cards in each row, considering margin between cards */
+    text-align: center;
+    margin: 10px; /* Adjust margin as needed */
+    background-color: white;
+  }
+  
+  .card img {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    margin-bottom: 10px;
+  }

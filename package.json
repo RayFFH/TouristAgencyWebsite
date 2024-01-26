@@ -16,15 +16,16 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "sass": "^1.70.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,29 +1,42 @@
 /* CarouselCard.css */
 
 .carousel-item {
-    text-align: center; /* Center align the content */
-  }
-  
-  .card-image {
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height if necessary */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-  }
-  
-  .card-text {
-    margin-top: 10px; /* Add margin between image and text */
-    color: #333; /* Set text color */
-    font-size: 16px; /* Set font size */
-  }
+  position: relative; /* Set position relative for absolute positioning of text */
+  text-align: center; /* Center align the content */
+}
 
-  .slick-prev, .slick-next {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .slick-prev:hover, .slick-next:hover {
-    color: #555;
-  }
-  
-  
+.card-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 600px; /* Set a maximum height if necessary */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  height: 100%;
+}
+
+.card-text {
+  position: absolute; /* Position the text absolute */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+  margin: 0; /* Reset margin */
+  color: #ffffff; /* Set text color */
+  font-size: 50px; /* Set font size */
+  font-weight: 700;
+  text-shadow:
+          -2px -2px 0 #000, /* Top-left shadow */
+          2px -2px 0 #000,  /* Top-right shadow */
+          -2px 2px 0 #000,  /* Bottom-left shadow */
+          2px 2px 0 #000;   /* Bottom-right shadow */
+    
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: #333;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #555;
+}
