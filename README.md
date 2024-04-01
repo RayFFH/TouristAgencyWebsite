@@ -166,8 +166,8 @@ If you want to use this as a template and deploy your own webapp make sure to us
 - [x] Add Changelog
 - [x] Add back to top links
 - [x] Finish basic template for website
-- [ ] Finish HomePage
-- [ ] Add What's New Page to website
+- [x] Finish HomePage
+- [x] Add What's New Page to website
 - [ ] Add search function
 - [ ] Allowing Tabbing for visually impaired users
 - [ ] Multi-language Support
