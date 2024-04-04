@@ -114,16 +114,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-To run the website locally
-  ```
-  npm run build
-  ```
-  ```
-  npm start
-  ```
-
 ### Installation
 
 1. Clone the repo
